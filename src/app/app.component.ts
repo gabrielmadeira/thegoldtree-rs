@@ -10,12 +10,11 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent implements OnInit {
   title = 'thegoldtree-rs';
   RSrequest;
-  rsTitle = 'Um método para deduplicação de metadados bibliográficos baseado no empilhamento de classificadores';  ;
+  rsTitle = '';  ;
   rsAbstract;
   
 
   OnSubmit() {
-    console.log("test");
     this.http.post('http://127.0.0.1:5000/rs', { titleabstract : this.rsTitle + this.rsAbstract }).subscribe(data => {
       this.RSrequest = data;
     })

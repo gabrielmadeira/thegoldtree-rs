@@ -44,3 +44,12 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Recommendation System large data files
+/rs/researcher
+/rs/centroids_min_uint16
+/rs/centroids
+/rs/classes
+/rs/vectorizer
+
+/rs/__pycache__*

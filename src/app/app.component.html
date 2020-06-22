@@ -1,10 +1,10 @@
+<div class="container justify-content-md-center" >
+  <h1>The Gold Tree Recommender System</h1>
+</div>
 <div class="container">
   <div class="row">
-    <div class="col"></div>
 
     <div class="col">
-      <img src="http://lorempixel.com/400/200/" class="img-fluid img-thumbnail" alt="Responsive image">
-      <br><br>
       <form>
         <div class="form-group">
           <label for="title">Title</label>
@@ -23,16 +23,19 @@
 
     </div>
 
-    <div class="col"></div>
+    <div class="col">
+      <div class="container" >
+        <div class="row justify-content-md-center">
+          <h4>Ranking: </h4><br><br>
+        </div>
+        <div class="row justify-content-md-center">
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let name of this.RSrequest">
+              {{ name }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-</div>
-
-<div class="container">
-  <div class="row justify-content-md-center">
-    <ul class="list-group">
-      <li class="list-group-item" *ngFor="let name of this.RSrequest">
-        {{ name }}
-      </li>
-    </ul>
-  </div>
 </div>
